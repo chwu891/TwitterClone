@@ -11,6 +11,9 @@
 		198EB0AE25C2A188001E51B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0AD25C2A188001E51B0 /* ContentView.swift */; };
 		198EB0B025C2A18A001E51B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198EB0AF25C2A18A001E51B0 /* Assets.xcassets */; };
 		198EB0B325C2A18A001E51B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198EB0B225C2A18A001E51B0 /* Preview Assets.xcassets */; };
+		198EB0C025C2A256001E51B0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0BF25C2A256001E51B0 /* LoginView.swift */; };
+		198EB0C525C2A860001E51B0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0C425C2A860001E51B0 /* CustomTextField.swift */; };
+		198EB0C925C2BC43001E51B0 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0C825C2BC43001E51B0 /* SecureTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		198EB0AF25C2A18A001E51B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198EB0B225C2A18A001E51B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		198EB0B425C2A18A001E51B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198EB0BF25C2A256001E51B0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		198EB0C425C2A860001E51B0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		198EB0C825C2BC43001E51B0 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,9 @@
 		198EB0AA25C2A188001E51B0 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				198EB0BB25C2A204001E51B0 /* Model */,
+				198EB0BC25C2A211001E51B0 /* View */,
+				198EB0BD25C2A218001E51B0 /* ViewModel */,
 				198EB0AB25C2A188001E51B0 /* TwitterCloneApp.swift */,
 				198EB0AD25C2A188001E51B0 /* ContentView.swift */,
 				198EB0AF25C2A18A001E51B0 /* Assets.xcassets */,
@@ -67,6 +76,46 @@
 				198EB0B225C2A18A001E51B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		198EB0BB25C2A204001E51B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		198EB0BC25C2A211001E51B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				198EB0C325C2A83F001E51B0 /* Utils */,
+				198EB0BE25C2A23E001E51B0 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		198EB0BD25C2A218001E51B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		198EB0BE25C2A23E001E51B0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				198EB0BF25C2A256001E51B0 /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		198EB0C325C2A83F001E51B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				198EB0C425C2A860001E51B0 /* CustomTextField.swift */,
+				198EB0C825C2BC43001E51B0 /* SecureTextField.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198EB0C525C2A860001E51B0 /* CustomTextField.swift in Sources */,
+				198EB0C925C2BC43001E51B0 /* SecureTextField.swift in Sources */,
+				198EB0C025C2A256001E51B0 /* LoginView.swift in Sources */,
 				198EB0AE25C2A188001E51B0 /* ContentView.swift in Sources */,
 				198EB0AC25C2A188001E51B0 /* TwitterCloneApp.swift in Sources */,
 			);
