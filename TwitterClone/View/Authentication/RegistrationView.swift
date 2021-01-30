@@ -14,21 +14,45 @@ struct RegistrationView: View {
     @State var email = ""
     @State var password = ""
     
+    @State private var toShowPhotoLibrary = false
+    @State private var image: UIImage?
+    @State private var transferredImage: Image?
+    
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
+    func loadImage() {
+        guard let image = image else { return }
+        transferredImage = Image(uiImage: image)
+    }
     
     var body: some View {
         ZStack {
             VStack {
-                
-                Button(action: {}, label: {
-                    Image(systemName: "person.crop.circle.badge.plus")
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 120)
+                Button(action: { self.toShowPhotoLibrary = true }, label: {
+                    
+                    if let userimage = transferredImage {
+                        userimage
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 150, height: 150)
+                            .clipped()
+                            .cornerRadius(75)
+                        
+                    } else {
+                        Image(systemName: "person.crop.circle.badge.plus")
+                            .resizable()
+                            .scaledToFill()
+                            .foregroundColor(.white)
+                            .frame(width: 150, height: 150)
+                    }
+                    
                 })
                 .padding(.top, 80)
                 .padding(.bottom, 30)
+                .sheet(isPresented: $toShowPhotoLibrary, onDismiss: loadImage, content: {
+                    ImagePicker(selectedImage: $image, sourceType: .photoLibrary)
+                })
+                
                 
                 VStack(spacing: 20) {
                     
