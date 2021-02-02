@@ -19,6 +19,8 @@ struct RegistrationView: View {
     @State private var transferredImage: Image?
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @ObservedObject var viewModel = AuthViewModel()
+    
     
     func loadImage() {
         guard let image = image else { return }
@@ -82,7 +84,10 @@ struct RegistrationView: View {
                 }
                 .padding(.horizontal, 30)
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    guard let image = image else { return }
+                    viewModel.registerUser(email: email, password: password, fullname: fullName, username: username, profileImage: image)
+                }, label: {
                     Text("Sign up")
                         .font(.headline)
                         .foregroundColor(.blue)

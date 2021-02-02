@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1964509425C40C7000BE4DF7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964509325C40C7000BE4DF7 /* ImagePicker.swift */; };
-		1964509725C7B26100BE4DF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1964509625C7B26100BE4DF7 /* GoogleService-Info.plist */; };
 		1964509B25C7B3C500BE4DF7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 1964509A25C7B3C500BE4DF7 /* FirebaseFunctions */; };
 		1964509D25C7B3C500BE4DF7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1964509C25C7B3C500BE4DF7 /* FirebaseStorage */; };
 		1964509F25C7B3C500BE4DF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1964509E25C7B3C500BE4DF7 /* FirebaseAuth */; };
 		196450A125C7B3C500BE4DF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 196450A025C7B3C500BE4DF7 /* FirebaseFirestore */; };
+		196450A425C8FDC200BE4DF7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196450A325C8FDC200BE4DF7 /* AuthViewModel.swift */; };
+		196450A825C9509100BE4DF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 196450A725C9509100BE4DF7 /* GoogleService-Info.plist */; };
 		198EB0AC25C2A188001E51B0 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0AB25C2A188001E51B0 /* TwitterCloneApp.swift */; };
 		198EB0AE25C2A188001E51B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EB0AD25C2A188001E51B0 /* ContentView.swift */; };
 		198EB0B025C2A18A001E51B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198EB0AF25C2A18A001E51B0 /* Assets.xcassets */; };
@@ -25,7 +26,8 @@
 
 /* Begin PBXFileReference section */
 		1964509325C40C7000BE4DF7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		1964509625C7B26100BE4DF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		196450A325C8FDC200BE4DF7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		196450A725C9509100BE4DF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		198EB0A825C2A188001E51B0 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198EB0AB25C2A188001E51B0 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		198EB0AD25C2A188001E51B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 				198EB0AD25C2A188001E51B0 /* ContentView.swift */,
 				198EB0AF25C2A18A001E51B0 /* Assets.xcassets */,
 				198EB0B425C2A18A001E51B0 /* Info.plist */,
-				1964509625C7B26100BE4DF7 /* GoogleService-Info.plist */,
+				196450A725C9509100BE4DF7 /* GoogleService-Info.plist */,
 				198EB0B125C2A18A001E51B0 /* Preview Content */,
 			);
 			path = TwitterClone;
@@ -112,6 +114,7 @@
 		198EB0BD25C2A218001E51B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				196450A325C8FDC200BE4DF7 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 			files = (
 				198EB0B325C2A18A001E51B0 /* Preview Assets.xcassets in Resources */,
 				198EB0B025C2A18A001E51B0 /* Assets.xcassets in Resources */,
-				1964509725C7B26100BE4DF7 /* GoogleService-Info.plist in Resources */,
+				196450A825C9509100BE4DF7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +221,7 @@
 				198EB0C925C2BC43001E51B0 /* SecureTextField.swift in Sources */,
 				198EB0C025C2A256001E51B0 /* LoginView.swift in Sources */,
 				1964509425C40C7000BE4DF7 /* ImagePicker.swift in Sources */,
+				196450A425C8FDC200BE4DF7 /* AuthViewModel.swift in Sources */,
 				198EB0CC25C2C13E001E51B0 /* RegistrationView.swift in Sources */,
 				198EB0AE25C2A188001E51B0 /* ContentView.swift in Sources */,
 				198EB0AC25C2A188001E51B0 /* TwitterCloneApp.swift in Sources */,
