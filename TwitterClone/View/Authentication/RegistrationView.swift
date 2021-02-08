@@ -19,7 +19,7 @@ struct RegistrationView: View {
     @State private var transferredImage: Image?
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    @ObservedObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     
     func loadImage() {

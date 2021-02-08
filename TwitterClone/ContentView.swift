@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if viewModel.userSession != nil {
+                VStack {
+                    Text("Hello, world!")
+                        .padding()
+                    Button(action: {
+                        viewModel.signOut()
+                    }, label: {
+                        Text("Button")
+                    })
+                }
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 
